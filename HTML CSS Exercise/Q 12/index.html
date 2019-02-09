@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<h2 style="float: left;">TO THE NEW </h2>
+		<ul style="float: right;">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Quick Help</a></li>
+		</ul>
+	</div>
+	<hr>
+	<div id="bug-form">
+		<form>
+			<h3 id="form-heading">Bug Report</h3>
+			<div class="form-content">
+				<label>Title:*</label><br>
+				<input class="element" type="text" name="title"><br>
+				<label>Description:*</label><br>
+				<textarea class="element" name="description" rows="4"></textarea><br>
+				<label>Operating System:</label><br>
+				<select class="element" name="operatingsystem">
+					<option value="windowsxp" selected>Wndows XP</option>
+					<option value="ubuntu">Ubuntu</option>
+					<option value="redhat" selected>Red Hat</option>
+				</select><br>
+				<label>Product:*</label><br>
+				<select name="product" class="element">
+					<option value="formoid">Formoid</option>
+					<option value="product2">Product 2</option>
+					<option value="product3">Product 3</option>
+				</select><br>
+				<label>Version:</label><br>
+				<input type="text" name="version" class="element" style="width: 20%"><br>
+				<label>License:</label><br>
+				<div class="element">
+					<table width="100%">
+						<tr>
+							<td style="width: 50%"><input type="radio" name="license" value="free">Free</td>
+							<td style="width: 50%"><input type="radio" name="license" value="business">Business</td>
+						</tr>
+					</table>
+				</div><br>
+				<label>Severity:</label><br>
+				<select class="element" name="severity">
+					<option value="critical">Critical</option>
+					<option value="moderate">Moderate</option>
+					<option value="recovered">Recovered</option>
+				</select><br>
+				<label>Attachments:</label><br>
+				<input type="file" class="element"><br>
+			</div>
+			
+			<div id="form-footer">
+				<input type="submit" id="submit-btn" value="Send">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
