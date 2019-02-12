@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q1</title>
+	<script type="text/javascript">
+		function calculateSInterest() {
+				// body...
+			var amount = prompt("Enter the amount to calculate simple interest: ");
+			console.log(amount);
+			if(isNaN(amount) || amount === "" || parseInt(amount) <= 0 || amount == null)
+			{
+				txt = "please enter the valid amount";
+			}
+			else{
+				var noy = prompt("enter the number of years you wish to calculate interest for : ");
+				if(isNaN(noy) || noy === "" || parseInt(noy) <= 0 || noy == null)
+				{
+					txt = "please enter valid input ";
+				}
+				else{
+					var ir = prompt("Enter the interest rate: ");
+					if(isNaN(ir) || ir === ""|| parseInt(ir) <= 0 || ir == null)
+					{
+						txt = "please enter valid interest rate ";
+					}
+					else{
+						var si = (amount * noy *ir)/100;
+						txt = "The Calculated Simple Interest is: " +si;
+					}
+					
+				}	
+			}
+			document.write(txt);
+		}
+		calculateSInterest()
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

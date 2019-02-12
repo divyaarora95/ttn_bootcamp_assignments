@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q3</title>
+	<script type="text/javascript">
+		var radius = prompt("Enter the radius of the Circle: ");
+		if(isNaN(radius) || radius === "" || parseInt(radius) <= 0 || radius == null)
+		{
+			txt = "Please enter a valid Number!";
+		}
+		else
+		{
+			var area = 3.14 * radius * radius;
+			txt = "The required area is: " +area;
+		}
+		document.write(txt);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

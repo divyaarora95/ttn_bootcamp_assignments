@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q2</title>
+	<script type="text/javascript">
+		var input = prompt("Enter the String to Check for Palindrome: ");
+		if(input === "" || input == null)
+		{
+			txt = "Please enter valid input";	
+		}
+		else
+		{
+			var str = input.split('').reverse().join('');
+			if(input == str)
+			{
+				txt = "The given input is a Palindrome";
+			}
+			else
+			{
+				txt = "Not a Palindrome";
+			}
+			
+		}
+		
+		document.write(txt);
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>
