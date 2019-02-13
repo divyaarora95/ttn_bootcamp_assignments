@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		.load
+		{
+			padding: 3em;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h2>Question 2: </h2>
+	<h3 id="test">This is text from the test ID</h3>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#test").addClass("load");
+			console.log("Text turns Red as it adds a Class to itself");
+		});
+	</script>
+</body>
+</html>

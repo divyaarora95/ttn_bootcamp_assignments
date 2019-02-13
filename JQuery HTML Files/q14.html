@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q14</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		table td{
+			border: 1px solid black;
+			padding: 2em;
+		}
+	</style>
+</head>
+<body>
+	<h1>Question 14: </h1>
+	<table>
+		<tr>
+			<td>Team A</td>
+			<td>9</td>
+		</tr>
+		<tr>
+			<td>Team B</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>Team C</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td>Team D</td>
+			<td>11</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("td").each(function(){
+				var contestents = $(this).text();
+				if(contestents > 10)
+				{
+					$(this).css({"background": "violet", "color": "darkblue"});
+				}
+			});
+		});
+	</script>
+</body>
+</html>

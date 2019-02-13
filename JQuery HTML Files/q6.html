@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q6</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div>
+		<p>This is text inside p tag</p>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("div > p").text("This is the changed text inside p tag");
+			console.log("Text in p tag changed");
+		});
+		
+	</script>
+</body>
+</html>

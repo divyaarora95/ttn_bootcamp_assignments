@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q9</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<h4>Select Your Stream</h4>
+	<select id="streams">
+		<option>Science</option>
+		<option>Humanities</option>
+		<option>Commerce</option>
+	</select>
+	<h3>Your selected Stream is: </h3>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#streams").on("change",function(){
+				var text = $("#streams").val();
+				$("body h3").append(text);
+				console.log("choice made");
+			});
+		});
+	</script>
+</body>
+</html>

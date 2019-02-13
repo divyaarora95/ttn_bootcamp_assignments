@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q13</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body style="max-height: 100px">
+	<h1 style="max-height: 120px">this is a heading</h1>
+	<p style="max-height: 70px">we are inside paragraph</p>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("*").each(function(){
+				let element_target = $(this).prop("tagName");
+				let element_height = $(this).css("max-height");
+				console.log("Tag "+element_target+" max-height "+element_height);
+			})
+		})
+	</script>
+</body>
+</html>

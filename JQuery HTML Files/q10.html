@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q10</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		#btn{
+			background: pink;
+			padding: 20px;
+			color: darkblue;
+			border: 5px solid black;
+		}
+		#btn-list{
+			padding: 20px;	
+		}
+
+		a{
+			border: 1px solid black;
+			width: 4.5em;
+			display: block;
+			padding: 20px;
+			text-align: center;
+			background: pink;
+		}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<h1>Queston 10: </h1>
+		<button id="btn">Categories</button>
+		<div id="btn-list">
+			<a href="#">Category A</a><br>
+			<a href="#">Category B</a><br>
+			<a href="#">Category C</a><br>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			console.log("Document Loaded");
+			$("#btn").hover(function(){
+				console.log("hovering now");
+				$("#btn-list").css({"display": "block"});}
+				,function(){
+					 $("#btn-list").css({"display": "none"});
+				});
+			});
+	</script>
+</body>
+</html>

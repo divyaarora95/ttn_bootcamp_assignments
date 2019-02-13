@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q3</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<p class="1" >Content in class 1</p>
+	<p class="2-new" >Content in class 2</p>
+	<p class="3" >Content in class 3</p>
+	<p class="4-new" >Content in class 4</p>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("[class$='-new']").css({"color": "green"});
+		});
+		
+	</script>
+</body>
+</html>
