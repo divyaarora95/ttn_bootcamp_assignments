@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q17</title>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>	
+		#images {
+			width: 500px;
+			height: 200px;
+		}
+	</style>
+	<script type="text/javascript">
+		var imgArray = new Array("modi.jpg", "pollution.jpeg", "mayawati-cartoon.jpeg");
+		$(document).ready(function(){
+			
+			var counter = 0;
+			$("#images").css("background-image", "url(" + imgArray[counter] + ")");
+			setInterval(function(){
+				counter++;
+				if(counter == imgArray.length)
+				{
+					counter =0;
+				}
+				$("#images").fadeOut("slow", function(){
+					$("#images").css("background-image", "url(" + imgArray[counter] + ")");
+					$(this).fadeIn("slow");
+				});
+			},500);
+
+		});
+	</script>
+</head>
+<body>
+
+	<div id="images">
+		
+	</div>
+
+	
+</body>
+</html>
