@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q5</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		employee1 ={'name': 'Ron', 'age': 23, 'salary': 30000, 'dob': new Date(1995, 1, 15)}
+		employee2 ={'name': "Jack", 'age': 28, 'salary': 25000, 'dob': new Date(1990, 2, 17)}
+		employee3 ={'name': "Rose", 'age': 22, 'salary': 300, 'dob': new Date(1996, 3, 18)}
+		employee4 ={'name': "Jenny", 'age': 21, 'salary': 2500, 'dob': new Date(1997, 4, 19)}
+		employee5 ={'name': 'John', 'age': 20, 'salary': 2000, 'dob': new Date(1998, 1, 15)}
+		employee6 ={'name': "Emma", 'age': 22, 'salary': 40000, 'dob': new Date(1996, 2, 17)}
+		employee7 ={'name': "Emily", 'age': 29, 'salary': 500, 'dob': new Date(2000, 3, 18)}
+		employee8 ={'name': "Robin", 'age': 19, 'salary': 2500, 'dob': new Date(2000, 4, 19)}
+
+		// displaying all objects
+		var employeelist = [employee1, employee2, employee3, employee4, employee5, employee6, employee7, employee8];
+		console.log(employeelist);
+
+		// filtering By Salary
+		var salaryarray = employeelist.filter(function(e){
+			if(e.salary > 5000)
+			{
+				console.log(e);
+			}
+		})
+
+		// Grouping By Age
+		employeelist.groupingBy = function(age)
+		{
+			return this.reduce(function(groups, item){
+				const val = item[age];
+				groups[val] = groups[val] || [];
+				groups[val].push(item);
+				return groups;
+
+			} ,{})
+		}
+		var result = employeelist.groupingBy("age");
+		console.log(result);
+
+		// Filtering Salaries and Incrementing
+		var filteredData = employeelist.filter(function(e){
+			if(e.salary < 1000 && e.age >20)
+			{
+				console.log(e);
+				return e;
+			}
+		})
+
+		console.log(filteredData);
+
+		var incrementedSalaries = filteredData.map(function(e){
+			e.salary += e.salary*5;
+			console.log(incrementedSalaries);
+		})
+	
+
+
+
+	</script>
+
+</body>
+</html>
