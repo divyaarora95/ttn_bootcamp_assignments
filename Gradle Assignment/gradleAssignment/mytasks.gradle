@@ -1,0 +1,7 @@
+task myFirstTask<<{
+    println "my first task!!"
+}
+
+task mySecondTask<<{
+    println "my second task"
+}
